@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surya Prakash S — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════ LOADING SCREEN ═══════════════════ -->
+<div id="loader">
+  <div class="loader-track">
+    <div class="loader-cart" id="loaderCart">🎢</div>
+    <div class="loader-rail"></div>
+  </div>
+  <p class="loader-text">BOARDING YOUR RIDE…</p>
+  <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+</div>
+
+<!-- ═══════════════════ CUSTOM CURSOR ═══════════════════ -->
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav id="navbar">
+  <div class="nav-logo">SP<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero">Start</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Journey</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-speed">
+    <span class="speed-label">SPEED</span>
+    <div class="speed-bar"><div class="speed-fill" id="speedFill"></div></div>
+  </div>
+</nav>
+
+<!-- ═══════════════════ PROGRESS TRACK ═══════════════════ -->
+<div id="progressTrack">
+  <svg id="trackSvg" viewBox="0 0 10 100" preserveAspectRatio="none">
+    <path id="trackPath" d="M5,0 Q8,20 5,30 Q2,45 5,55 Q8,70 5,80 Q3,90 5,100" stroke="#ffd23f" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+    <circle id="cartDot" cx="5" cy="0" r="3" fill="#ffd23f"/>
+  </svg>
+</div>
+
+<!-- ═══════════════════ SECTION 1: HERO ═══════════════════ -->
+<section id="hero" class="section hero-section">
+  <div class="hero-bg">
+    <img src="assets/hero-bg.png" alt="" class="hero-bg-img"/>
+    <div class="hero-overlay"></div>
+    <img src="assets/skyline.png" alt="" class="skyline-img"/>
+  </div>
+  <div class="hero-content">
+    <div class="coaster-label">🎢 PORTFOLIO EXPERIENCE — FASTEN YOUR SEATBELT</div>
+    <h1 class="hero-name">
+      <span class="hero-first" data-text="SURYA">SURYA</span>
+      <span class="hero-last" data-text="PRAKASH S">PRAKASH S</span>
+    </h1>
+    <div class="hero-tagline">
+      <span class="tag-word">Technical</span>
+      <span class="tag-dot">·</span>
+      <span class="tag-word">Support</span>
+      <span class="tag-dot">·</span>
+      <span class="tag-word">Engineer</span>
+      <span class="tag-dot">·</span>
+      <span class="tag-word">Author</span>
+    </div>
+    <div class="hero-sub">Blue Yonder · Bengaluru · 5+ Years Experience</div>
+    <div class="hero-cta-row">
+      <a href="#about" class="cta-btn primary">Begin The Ride ↓</a>
+      <a href="#contact" class="cta-btn secondary">Contact Me</a>
+    </div>
+  </div>
+  <div class="hero-cart-wrapper">
+    <img src="assets/cart.png" alt="coaster cart" class="hero-cart" id="heroCart"/>
+    <div class="cart-smoke" id="smoke1"></div>
+    <div class="cart-smoke" id="smoke2"></div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-wheel"></div>
+    <span>Scroll to ride</span>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 2: ABOUT ═══════════════════ -->
+<section id="about" class="section about-section">
+  <div class="track-divider">
+    <img src="assets/track-divider.png" alt="" class="divider-img"/>
+  </div>
+  <div class="section-inner">
+    <div class="section-label reveal">STATION 01 — ABOUT</div>
+    <div class="about-grid">
+      <div class="about-avatar-col reveal-left">
+        <div class="avatar-frame">
+          <img src="assets/avatar.png" alt="Surya Prakash S" class="avatar-img"/>
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-ring ring-3"></div>
+          <div class="avatar-badge">TSE 2</div>
+        </div>
+        <div class="avatar-stats">
+          <div class="stat-pill"><span class="stat-num" data-target="5">0</span><span>+ Years</span></div>
+          <div class="stat-pill"><span class="stat-num" data-target="3">0</span><span>+ Roles</span></div>
+          <div class="stat-pill"><span class="stat-num" data-target="2">0</span><span> Awards</span></div>
+        </div>
+      </div>
+      <div class="about-text-col reveal-right">
+        <h2 class="section-title">The Engineer <em>Behind</em> The Ride</h2>
+        <p class="about-desc">
+          Technical Support Engineer at <strong>Blue Yonder</strong>, Bengaluru. I've been riding the rails of enterprise software support for over 5 years — diagnosing complex issues, building bridges between clients and engineering teams, and making sure every system runs at <span class="highlight">full throttle</span>.
+        </p>
+        <p class="about-desc">
+          Beyond the terminal, I'm an <strong>author</strong> — my publication <em>"Database Management Made Simple Through Python"</em> distills complex data concepts into accessible knowledge.
+        </p>
+        <div class="about-chips">
+          <span class="chip">🎓 MBA – IT (KSoU)</span>
+          <span class="chip">🎓 BE – EECEngg (NIE Mysore)</span>
+          <span class="chip">📖 Published Author</span>
+          <span class="chip">📍 Bengaluru, India</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 3: EXPERIENCE ═══════════════════ -->
+<section id="experience" class="section exp-section">
+  <div class="section-inner">
+    <div class="section-label reveal">STATION 02 — THE JOURNEY</div>
+    <h2 class="section-title reveal">5 Years on the <em>Fast Track</em></h2>
+
+    <div class="timeline">
+      <!-- current -->
+      <div class="tl-item reveal" data-delay="0">
+        <div class="tl-dot active"></div>
+        <div class="tl-connector"></div>
+        <div class="tl-card active-card">
+          <div class="tl-year">Jul 2024 – Present</div>
+          <div class="tl-role">Technical Support Engineer 2</div>
+          <div class="tl-company">Blue Yonder · Bengaluru</div>
+          <p class="tl-desc">Leading complex enterprise support cases, driving resolution strategies, and mentoring junior engineers. Elevated ownership of client-critical systems.</p>
+          <div class="tl-badge">🚀 Current Role</div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal" data-delay="100">
+        <div class="tl-dot"></div>
+        <div class="tl-connector"></div>
+        <div class="tl-card">
+          <div class="tl-year">Mar 2022 – Jul 2024</div>
+          <div class="tl-role">Technical Support Engineer 1</div>
+          <div class="tl-company">Blue Yonder · Bengaluru</div>
+          <p class="tl-desc">Managed end-to-end support tickets for supply chain software. Built expertise in Oracle SQL & Python-based diagnostics.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal" data-delay="200">
+        <div class="tl-dot"></div>
+        <div class="tl-connector"></div>
+        <div class="tl-card">
+          <div class="tl-year">Jul 2021 – Mar 2022</div>
+          <div class="tl-role">Associate Support Engineer</div>
+          <div class="tl-company">Blue Yonder · Bengaluru</div>
+          <p class="tl-desc">Onboarded into enterprise software support. Developed core troubleshooting skills across database and system layers.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal" data-delay="300">
+        <div class="tl-dot"></div>
+        <div class="tl-connector"></div>
+        <div class="tl-card">
+          <div class="tl-year">Jan 2021 – Jun 2021</div>
+          <div class="tl-role">Intern</div>
+          <div class="tl-company">Blue Yonder · Bengaluru</div>
+          <p class="tl-desc">First exposure to enterprise-scale support operations. Foundation of a 5-year journey.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal" data-delay="400">
+        <div class="tl-dot"></div>
+        <div class="tl-connector"></div>
+        <div class="tl-card">
+          <div class="tl-year">Jul 2019 – Aug 2019</div>
+          <div class="tl-role">Project Intern</div>
+          <div class="tl-company">D R Technologies · Mysuru</div>
+          <p class="tl-desc">Hands-on project work that sparked the engineering mindset.</p>
+        </div>
+      </div>
+
+      <div class="tl-item reveal" data-delay="500">
+        <div class="tl-dot"></div>
+        <div class="tl-connector last-dot"></div>
+        <div class="tl-card">
+          <div class="tl-year">Sep 2018 – Oct 2018</div>
+          <div class="tl-role">Intern</div>
+          <div class="tl-company">Azure Skynet Solutions · Bengaluru</div>
+          <p class="tl-desc">Early industry exposure in software solutions environment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 4: SKILLS ═══════════════════ -->
+<section id="skills" class="section skills-section">
+  <div class="track-divider">
+    <img src="assets/track-divider.png" alt="" class="divider-img flip"/>
+  </div>
+  <div class="section-inner">
+    <div class="section-label reveal">STATION 03 — ARSENAL</div>
+    <h2 class="section-title reveal">Skills in the <em>Toolkit</em></h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal" data-delay="0" style="--accent:#ff8c00">
+        <div class="skill-icon">🗄️</div>
+        <div class="skill-name">Oracle SQL Developer</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-pct="92"></div></div>
+        <div class="skill-pct">92%</div>
+      </div>
+      <div class="skill-card reveal" data-delay="80" style="--accent:#00b4ff">
+        <div class="skill-icon">🐍</div>
+        <div class="skill-name">Python</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-pct="85"></div></div>
+        <div class="skill-pct">85%</div>
+      </div>
+      <div class="skill-card reveal" data-delay="160" style="--accent:#a050ff">
+        <div class="skill-icon">🐬</div>
+        <div class="skill-name">MySQL</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-pct="88"></div></div>
+        <div class="skill-pct">88%</div>
+      </div>
+      <div class="skill-card reveal" data-delay="240" style="--accent:#00dc82">
+        <div class="skill-icon">🔀</div>
+        <div class="skill-name">Git & Version Control</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-pct="80"></div></div>
+        <div class="skill-pct">80%</div>
+      </div>
+      <div class="skill-card reveal" data-delay="320" style="--accent:#ff3c78">
+        <div class="skill-icon">🎧</div>
+        <div class="skill-name">Technical Support</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-pct="95"></div></div>
+        <div class="skill-pct">95%</div>
+      </div>
+      <div class="skill-card reveal" data-delay="400" style="--accent:#ffd23f">
+        <div class="skill-icon">🏗️</div>
+        <div class="skill-name">Microservices</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-pct="75"></div></div>
+        <div class="skill-pct">75%</div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="certs-section reveal">
+      <h3 class="certs-title">Certifications</h3>
+      <div class="certs-list">
+        <div class="cert-item"><span class="cert-icon">📜</span>Software Architecture: Breaking a Monolith into Microservices</div>
+        <div class="cert-item"><span class="cert-icon">📜</span>Git Intermediate Techniques</div>
+        <div class="cert-item"><span class="cert-icon">📜</span>Microservices Foundations</div>
+        <div class="cert-item"><span class="cert-icon">📜</span>Git: Branches, Merges &amp; Remotes</div>
+        <div class="cert-item"><span class="cert-icon">📜</span>Having Difficult Conversations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 5: AWARDS ═══════════════════ -->
+<section id="awards" class="section awards-section">
+  <div class="section-inner">
+    <div class="section-label reveal">STATION 04 — HALL OF FAME</div>
+    <h2 class="section-title reveal">Awards &amp; <em>Recognition</em></h2>
+    <div class="awards-grid">
+      <div class="award-card gold reveal" data-delay="0">
+        <div class="award-glow"></div>
+        <div class="award-icon">🏆</div>
+        <div class="award-title">Pillar Individual Award</div>
+        <div class="award-event">H1 India Excellence Awards 2023</div>
+        <p class="award-desc">Recognised as a pillar of individual excellence among peers at Blue Yonder's India Excellence Awards.</p>
+      </div>
+      <div class="award-card silver reveal" data-delay="150">
+        <div class="award-glow"></div>
+        <div class="award-icon">💎</div>
+        <div class="award-title">GEM Award</div>
+        <div class="award-event">Blue Yonder Internal Recognition</div>
+        <p class="award-desc">Going the Extra Mile — awarded for outstanding contribution, dedication, and team impact.</p>
+      </div>
+    </div>
+
+    <!-- Publication -->
+    <div class="pub-card reveal">
+      <div class="pub-icon">📘</div>
+      <div class="pub-content">
+        <div class="pub-label">PUBLISHED WORK</div>
+        <div class="pub-title">Database Management Made Simple Through Python</div>
+        <p class="pub-desc">A practical guide bridging the gap between database theory and Python implementation — making data management accessible for developers at every level.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 6: EDUCATION ═══════════════════ -->
+<section id="education" class="section edu-section">
+  <div class="track-divider">
+    <img src="assets/track-divider.png" alt="" class="divider-img"/>
+  </div>
+  <div class="section-inner">
+    <div class="section-label reveal">STATION 05 — EDUCATION</div>
+    <h2 class="section-title reveal">Academic <em>Track Record</em></h2>
+    <div class="edu-cards">
+      <div class="edu-card reveal" data-delay="0">
+        <div class="edu-year">2024 – 2025</div>
+        <div class="edu-deg">MBA – Information Technology</div>
+        <div class="edu-inst">Karnataka State Open University</div>
+      </div>
+      <div class="edu-card reveal" data-delay="120">
+        <div class="edu-year">2017 – 2021</div>
+        <div class="edu-deg">BE – EE &amp; Communications Engineering</div>
+        <div class="edu-inst">The National Institute of Engineering, Mysore</div>
+      </div>
+      <div class="edu-card reveal" data-delay="240">
+        <div class="edu-year">2016 – 2017</div>
+        <div class="edu-deg">Class II — PCMB</div>
+        <div class="edu-inst">Marimallappa P.U. College</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 7: CONTACT ═══════════════════ -->
+<section id="contact" class="section contact-section">
+  <div class="section-inner">
+    <div class="section-label reveal">FINAL STATION — CONTACT</div>
+    <h2 class="section-title reveal">Let's <em>Connect</em></h2>
+    <p class="contact-sub reveal">The ride ends here — but the conversation is just beginning.</p>
+
+    <div class="contact-grid">
+      <a href="tel:9844463832" class="contact-card reveal" data-delay="0">
+        <div class="cc-icon">📞</div>
+        <div class="cc-label">Phone</div>
+        <div class="cc-val">+91 98444 63832</div>
+      </a>
+      <a href="mailto:suryaprakash0831@gmail.com" class="contact-card reveal" data-delay="80">
+        <div class="cc-icon">📧</div>
+        <div class="cc-label">Email</div>
+        <div class="cc-val">suryaprakash0831@gmail.com</div>
+      </a>
+      <a href="https://www.linkedin.com/in/suryaprakashs0831" target="_blank" class="contact-card reveal" data-delay="160">
+        <div class="cc-icon">💼</div>
+        <div class="cc-label">LinkedIn</div>
+        <div class="cc-val">suryaprakashs0831</div>
+      </a>
+      <a href="https://www.instagram.com/suryaprakash._.s/" target="_blank" class="contact-card reveal" data-delay="240">
+        <div class="cc-icon">📸</div>
+        <div class="cc-label">Instagram</div>
+        <div class="cc-val">@suryaprakash._.s</div>
+      </a>
+      <a href="https://twitter.com/spSuryaprakash8" target="_blank" class="contact-card reveal" data-delay="320">
+        <div class="cc-icon">🐦</div>
+        <div class="cc-label">Twitter/X</div>
+        <div class="cc-val">@spSuryaprakash8</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="site-footer">
+  <div class="footer-track">🎢</div>
+  <div class="footer-text">
+    Built with ❤️ &amp; precision by <strong>Surya Prakash S</strong><br/>
+    <span class="footer-sub">Technical Support Engineer · Author · Bengaluru</span>
+  </div>
+  <div class="footer-copy">© 2025 Surya Prakash S. All rights reserved.</div>
+</footer>
+
+<!-- ═══════════════════ FLOATING ELEMENTS ═══════════════════ -->
+<div id="floatParticles"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
